@@ -8,8 +8,14 @@ def home():
     """Landing page."""
     return render_template(
         'index.jinja2',
-        title='Plotly Dash Flask Tutorial',
+        title='Relief Camp Management Portal',
         description='Embed Plotly Dash into your Flask applications.',
         template='home-template',
         body="This is a homepage served with Flask."
     )
+    
+    
+@app.route('/dataenter/')
+def stanford_page():
+     return """<h1>Hello world!</h1>"""
+
